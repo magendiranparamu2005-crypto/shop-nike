@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4f7f1">
+
+    <title>Shopify | Ecommerce Platform</title>
+    <link rel="stylesheet" href="shiva.css">
+    <script src="aps.js" defer></script>
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <video class="br-video" autoplay muted loop playsinline>
+            <source src="stone.mp4" type="video/mp4">
+        </video>
+
+        <div class="video-overlay"></div>
+
+        <!-- NAVBAR -->
+        <nav class="navbar">
+            <a href="#home" class="brand">
+                <img
+                    src="https://cdn.shopify.com/assets/images/logos/shopify-bag.png"
+                    alt="Shopify logo"
+                >
+                <span>Shopify</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="navMenu"
+                type="button"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Start</a></li>
+                <li><a href="#sell">Sell</a></li>
+                <li><a href="#products">Market</a></li>
+                <li><a href="#manage">Manage</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#learn">Learn</a></li>
+                <li><a href="#signup" class="login-link">Log in</a></li>
+            </ul>
+        </nav>
+
+        <!-- HERO CONTENT -->
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="eyebrow">YOUR BUSINESS. YOUR FUTURE.</p>
+
+                <h1>The platform commerce is built on</h1>
+
+                <p class="hero-description">
+                    Millions of the world's most successful brands trust
+                    Shopify to sell products and process payments anywhere.
+                </p>
+
+                <form class="signup-form" id="signup">
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        aria-label="Email address"
+                        required
+                    >
+                    <button type="submit">Start free trial</button>
+                </form>
+
+                <p class="form-message" id="formMessage" aria-live="polite"></p>
+
+                <p class="privacy-note">
+                    Explore this practice website. No credit card required
+                    for this demo.
+                </p>
+            </div>
+        </div>
+
+        <a href="#sell" class="scroll-link">Explore more ↓</a>
+    </section>
+
+    <!-- BUSINESS SECTION -->
+    <section class="business-section" id="sell">
+
+        <div class="section-heading">
+            <p class="eyebrow">BUILT FOR YOUR NEXT BIG IDEA</p>
+            <h2>Bring your business online</h2>
+
+            <p>
+                Create an ecommerce website backed by powerful tools that
+                help you find customers, drive sales and manage your day-to-day.
+            </p>
+        </div>
+
+        <!-- SEARCH BAR -->
+        <div class="product-search-section">
+            <label for="productSearch">Find your favourite product</label>
+
+            <div class="search-box">
+                <span class="search-icon" aria-hidden="true">⌕</span>
+
+                <input
+                    type="search"
+                    id="productSearch"
+                    placeholder="Search drinks, face wash, headphones..."
+                    autocomplete="off"
+                    aria-label="Search products"
+                >
+
+                <button type="button" id="clearSearch">Clear</button>
+            </div>
+
+            <p id="searchMessage" aria-live="polite">
+                Explore our featured products.
+            </p>
+        </div>
+
+        <!-- PRODUCT CARDS -->
+        <div class="product-grid" id="products">
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="pic1.avif" alt="Drink product" loading="lazy">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-number">01 / DRINKS</span>
+                    <h3>Drink</h3>
+                    <p>Give your everyday products a distinctive identity.</p>
+                    <a href="#signup">Explore business ideas ↗</a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="pic2.avif" alt="Detour product" loading="lazy">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-number">02 / BRAND</span>
+                    <h3>Detour</h3>
+                    <p>Build a brand that makes people stop and look.</p>
+                    <a href="#signup">Explore business ideas ↗</a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="pic3.avif" alt="Face wash product" loading="lazy">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-number">03 / BEAUTY</span>
+                    <h3>Face Wash</h3>
+                    <p>Showcase your products with a clean storefront.</p>
+                    <a href="#signup">Explore business ideas ↗</a>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-image">
+                    <img src="pic4.avif" alt="Headphones product" loading="lazy">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-number">04 / TECHNOLOGY</span>
+                    <h3>Headphones</h3>
+                    <p>Turn great products into memorable experiences.</p>
+                    <a href="#signup">Explore business ideas ↗</a>
+                </div>
+            </article>
+
+            <!-- NO RESULTS MESSAGE -->
+            <div class="no-results" id="noResults" hidden>
+                <span>⌕</span>
+                <h3>No products found</h3>
+                <p>Try another product name or search term.</p>
+                <button type="button" id="resetSearch">Show all products</button>
+            </div>
+
+        </div>
+
+        <div class="section-footer">
+            <h3>Take the best path forward.</h3>
+            <a href="#signup" class="primary-link">Start your journey ↗</a>
+        </div>
+    </section>
+
+    <!-- AUDIENCE SECTION -->
+    <section class="audience-section" id="manage">
+
+        <div class="audience-content">
+            <p class="eyebrow">ONE PLATFORM. MANY POSSIBILITIES.</p>
+
+            <h2>For everyone from entrepreneurs to enterprise.</h2>
+
+            <p>
+                Whether you're starting small or building something big,
+                create an online business that grows with your ambitions.
+            </p>
+
+            <a href="#signup" class="light-button">Build your business ↗</a>
+        </div>
+
+        <div class="audience-stats">
+            <div class="stat">
+                <span>01</span>
+                <h3>Start</h3>
+                <p>Bring your idea to life.</p>
+            </div>
+
+            <div class="stat">
+                <span>02</span>
+                <h3>Grow</h3>
+                <p>Reach more customers.</p>
+            </div>
+
+            <div class="stat">
+                <span>03</span>
+                <h3>Scale</h3>
+                <p>Build for the future.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- PRICING / LEARN -->
+    <section class="closing-section" id="pricing">
+        <p class="eyebrow">READY WHEN YOU ARE</p>
+        <h2>Your next chapter starts here.</h2>
+
+        <p id="learn">
+            Explore the tools you need to launch, manage and grow your store.
+        </p>
+
+        <a href="#signup" class="closing-button">Get started ↗</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <a href="#home" class="footer-brand">shopify</a>
+        <p>Practice project created with HTML, CSS and JavaScript.</p>
+        <a href="#home">Back to top ↑</a>
+    </footer>
+
+</body>
+</html>
